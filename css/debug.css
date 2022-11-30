@@ -4,40 +4,146 @@
     padding: 0;
     box-sizing: border-box;
 }
+.big-container{
+    width: 100vw;
+    height: 90.2vh;
+    
+    /* background-color: aqua; */
+
+}
 
 /******************** ASIDE ********************/
 
+aside{
+    width: 15%;
+    /* min-height: 400px; */
+    min-height: 90vh;
+    /* background-color: green; */
+    z-index: -1;
+
+    
+}
 
 /***** HEADER LATERALE *****/
 
+aside header{
+    width: 100%;
+    min-height: 70px;
+    background-color: lightgreen;
+    position: sticky;
+    z-index: 10;
+    
+}
 
 /***** CONTENUTO PRINCIPALE ASIDE *****/
+.left-bar{
+    width: 100%;
+    height: 80vh;
+    background-color: antiquewhite;
+    position: relative;
+    
+}
+.aside-container{
+    width: 85%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: pink;
+    flex-direction: column;
+    position: relative;
 
 
+}
+
+aside .side-bar-buttons{
+    width: 100%;
+    /* height: 70px; */
+    min-height: 70px;
+    background-color: blue;
+}
+aside .playlist{
+    width: 100%;
+    min-height: 70%;
+    /* min-height: 400px; */
+    background-color: orange;
+    /* flex-grow: 1; */
+    overflow:scroll;
+
+}
 /***** FOOTER LATERALE *****/
 
+aside footer{
+    background-color: red;
+    /* min-height: 70px; */
+    /* z-index: 100; */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    
+   
+    
+    /* min-height: 70px;
+    max-height: 50%; */
+    
+    
+    
+    
+}
 
 /******************** FINE ASIDE ********************/
 
 
 /******************** MAIN ********************/
 
+main {
+    width: 85%;
+    background-color: darkblue;
+    overflow: auto;
+       position: relative;
+
+}
+
 
 /********** HEADER **********/
-/* #main-header{
-    width: 80vw;
-    min-height: 10vh;
-    background-color: grey;
-} */
+
+main header{
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
 
 
 /********** NAV **********/
 
+nav{
+    width: 60%;
+    min-height: 40px;
+    margin: 0 auto;
+    background-color: yellow;
+    /* margin-top: 10vh; */
+}
 
 /***** CONTENUTO PRINCIPALE MAIN *****/
 
+.main-container{
+    width: 100%;
+    min-height: 100%; 
+    background-color: skyblue;
+}
 
 /******************** FINE MAIN ********************/
 
 
 /******************** FOOTER ********************/
+
+#main-footer{
+    width: 100vw;
+    background-color: grey;
+    min-height: 70px;
+    display: fixed;
+    bottom: 0;
+    z-index: 60;
+}
