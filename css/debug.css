@@ -4,146 +4,240 @@
     padding: 0;
     box-sizing: border-box;
 }
-.big-container{
-    width: 100vw;
-    height: 90.2vh;
-    
-    /* background-color: aqua; */
+
+
+
+
+
+/* MAIN */
+main{
+    width: 100%;
+}
+
+main .big-container{
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    /* background-color: red; */
+}
+
+main .big-container > *{
+    height: 100%
+}
+
+main .big-container .navigation{
+    width: 230px;
+    background-color: black;
+}
+
+main .big-container .content{
+    width: calc(100% - 230px);
+    overflow: auto;
+    background-color: rgb(25, 29, 37);
+    color: white;
+}
+
+main .big-container .cta{
+    /* height: 70px; */
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    text-align: right;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+main .big-container .cta > a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+main .big-container .content .content-nav{
+    width: 55%;
+    min-height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    /* background-color: yellow; */
+}
+main .big-container .content .content-nav ul li{
+    list-style: none;
+}
+main .big-container .content .content-nav ul li > a{
+    text-decoration: none;
+    color: gray;
+}
+section:not(.content){
+    width: 100%;
+    padding: 15px;
+}
+section .row{
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: gold; */
+}
+section h2{
+    font-size: 1.9em;
+}
+section p{
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 10px;
+}
+section .row .col{
+    width: calc((100% / 6) - 15px);
+    /* height: 250px; */
+    /* height: calc(100vw / 6); */
+    /* background-color: skyblue;
+    border: 1px solid black; */
+    margin-right: 15px;
+    /* margin-bottom: 20px; */
+    position: relative;
+}
+/* section .row .col > .overlay{
+    width: 100%;
+    height: 180px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+} */
+
+section .row .col > .artist{
+    text-align: center;
+    padding-top: 10px;
+}
+section .row .col > .artist > div{
+    padding-top: 7px;
+    font-size: 0.9em;
+    color: gray;
+}
+#popular-artists .row .col img{
+    border-radius: 50%;
+}
+#popular-artists .row .col{
+    padding-bottom: 30px;
+}
+
+/* main .big-container .content {
+    width: calc(100% / 6);
+} */
+
+
+
+/* FOOTER */
+footer{
 
 }
+footer .player{
+    height: 90px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .player > *{
+    background-color: plum;
+    padding: 30px;
+}
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1100px){
+  
+    #recently .row .col{
+        width: calc((100% / 4) - 15px);
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 700px){
+   
+    #recently .row .col{
+        width: calc((100% / 2) - 15px);
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    
+    #recently .row .col{
+        width: calc((100% / 4) - 15px);
+        margin-bottom: 50px;
+    }
+    /* main .big-container .navigation{
+        width: 50px;
+    }
+    main .big-container .content{
+        width: calc(100% - 50px);
+    } */
+    
+}
+
+
+
+
+
+
+
+
+/* RESET */
 
 /******************** ASIDE ********************/
 
-aside{
-    width: 15%;
-    /* min-height: 400px; */
-    min-height: 90vh;
-    /* background-color: green; */
-    z-index: -1;
-
-    
-}
 
 /***** HEADER LATERALE *****/
 
-aside header{
-    width: 100%;
-    min-height: 70px;
-    background-color: lightgreen;
-    position: sticky;
-    z-index: 10;
-    
-}
 
 /***** CONTENUTO PRINCIPALE ASIDE *****/
-.left-bar{
-    width: 100%;
-    height: 80vh;
-    background-color: antiquewhite;
-    position: relative;
-    
-}
-.aside-container{
-    width: 85%;
-    min-height: 100%;
-    margin: 0 auto;
-    background-color: pink;
-    flex-direction: column;
-    position: relative;
 
-
-}
-
-aside .side-bar-buttons{
-    width: 100%;
-    /* height: 70px; */
-    min-height: 70px;
-    background-color: blue;
-}
-aside .playlist{
-    width: 100%;
-    min-height: 70%;
-    /* min-height: 400px; */
-    background-color: orange;
-    /* flex-grow: 1; */
-    overflow:scroll;
-
-}
 /***** FOOTER LATERALE *****/
 
-aside footer{
-    background-color: red;
-    /* min-height: 70px; */
-    /* z-index: 100; */
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 85%;
-    
-   
-    
-    /* min-height: 70px;
-    max-height: 50%; */
-    
-    
-    
-    
-}
 
 /******************** FINE ASIDE ********************/
 
 
 /******************** MAIN ********************/
 
-main {
-    width: 85%;
-    background-color: darkblue;
-    overflow: auto;
-       position: relative;
-
-}
-
-
 /********** HEADER **********/
-
-main header{
-    width: 100%;
-    min-height: 70px;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-}
 
 
 /********** NAV **********/
 
-nav{
-    width: 60%;
-    min-height: 40px;
-    margin: 0 auto;
-    background-color: yellow;
-    /* margin-top: 10vh; */
-}
 
 /***** CONTENUTO PRINCIPALE MAIN *****/
 
-.main-container{
-    width: 100%;
-    min-height: 100%; 
-    background-color: skyblue;
-}
 
 /******************** FINE MAIN ********************/
 
 
 /******************** FOOTER ********************/
 
-#main-footer{
-    width: 100vw;
-    background-color: grey;
-    min-height: 70px;
-    display: fixed;
-    bottom: 0;
-    z-index: 60;
+/* MEDIA QUERY */
+/* @media screen and (max-width: 1100px){
+    .row .col{
+        width: calc((100% / 4) - 10px);
+    }
+    
 }
+@media screen and (max-width: 700px){
+    .row .col{
+        width: calc((100% / 2) - 10px);
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .row .col{
+        width: calc((100% / 4) - 10px);
+    }
+    main .big-container .navigation{
+        width: 50px;
+    }
+    main .big-container .content{
+        width: calc(100% - 50px);
+    }
+    
+} */

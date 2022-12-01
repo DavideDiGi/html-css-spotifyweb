@@ -1,3 +1,31 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+img{
+    width: 100%;
+}
 .flex{
     display: flex;
 }
+.space{
+    justify-content: space-around;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+/* .center{
+    align-items: center;
+} */
+/* .gray{
+    color: gray;
+} */
