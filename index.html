@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/debug.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     
@@ -18,14 +20,118 @@
         <div class="big-container"> <!-- app -->
         
             <aside class="navigation"> <!-- INIZIO ASIDE -->
+                <!-- ASIDE HEADER -->
+                <header>
+                    <img src="img/logo.svg" alt="">
+                </header>
+                <!-- FINE ASIDE HEADER -->
                 
-                <div class="nav-top">
+                <div class="left-nav">
+                    
+                    <!-- NAV-TOP -->
+                    <div class="nav-top">
 
+                        <div class="home">
+                            
+                            <div class="home-icon">
+                               <img src="img/home.svg" alt="home">
+                            </div>
+
+                            <a href="#">
+                                Home
+                            </a>
+
+                        </div>
+                        <div class="search">
+
+                            <div class="home-icon">
+                               <img src="img/search.svg" alt="search">
+                            </div>
+                            
+                            <a href="#">
+                                Cerca
+                            </a>
+
+                        </div>
+                        <div class="library">
+
+                            <div class="home-icon">
+                                <img src="img/libreria.svg" alt="library">
+                             </div>
+                             
+                             <a href="#">
+                                 La tua libreria
+                             </a>
+
+                        </div>
+
+                    </div>
+                    <!-- FINE NAV TOP -->
+
+                    <!-- NAV BOTTOM -->
+                    <div class="nav-bottom">
+                       
+                        <div class="playlist">
+
+                            <div class="new-playlist">
+
+                                <h4>PLAYLIST</h4>
+                                <div class="add-new">
+
+                                    <a class="add-icon" href="#">
+                                        <i class="fa-solid fa-square-plus fa-3x"></i>
+                                        <span>Crea Playlist</span>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <div class="play-list">
+                                <ul>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                   
                 </div>
 
-                <div class="nav-bottom">
+                <!-- LEFT-FOOTER -->
+                <footer class="left-footer">
+                    <div class="left-footer-container">
+                        <div class="download">
+                           
+                            <div class="download-icon">
+                                <img src="img/download.svg" alt="download">
+                            </div>
+ 
+                            <a href="#">
+                                 Installa app
+                            </a>
 
-                </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="account">
+                            <div class="profile">
+                                <img src="img/profile.svg" alt="profile">
+                            </div>
+                            <a href="#">
+                                John Doe
+                            </a>
+                        </div>
+
+                    </div>
+                </footer>
+                <!-- FINE LEFT-FOOTER -->
 
             </aside> <!-- FINE ASIDE/BARRALATERALE -->      
                    
@@ -223,7 +329,7 @@
     </main>
     <!-- FINE MAIN -->
 
-    <footer id="main-footer"> <!-- FOOTER PRINCIPALE -->
+    <footer class="main-footer"> <!-- FOOTER PRINCIPALE -->
         <div class="player">
 
             <div class="playing">

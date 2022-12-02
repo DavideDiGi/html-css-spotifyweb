@@ -1,13 +1,142 @@
-/* RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ASIDE */
+
+/* ASIDE HEADER */
+aside header{
+    width: 100%;
+    height: 70px;
+}
+aside header img{
+    width: 70%;
+    padding-top: 15px;
+    padding-left: 25px;
 }
 
+/* ASIDE LEFT-NAV */
+aside .left-nav{
+    width: 100%;
+    height: calc(100% - 145px);
+}
 
+/* ASIDE NAV-TOP */
+aside .nav-top{
+    width: 100%;
+}
+aside .nav-top > *{
+   display: flex;
+   align-items: center;
+}
+aside .nav-top >:first-child{
+   border-left: 3px solid greenyellow;
+}
+aside .nav-top > div > *{
+   margin-top: 10px;
+}
+aside .nav-top > * >:first-child{
+   padding-left: 20px;
+   margin-right: 5px;
+   width: 20%;
+}
+aside .nav-top > * a{
+   text-decoration: none;
+   color: gray;
+}
+aside .nav-top > .home a{
+   color: white;
+}
+aside .nav-top > * > div img:not(.home img){
+    filter: brightness(0.6);
+}
 
+/* ASIDE NAV-BOTTOM */
 
+aside .nav-bottom .playlist{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+/* NEW PLAYLIST */
+aside .nav-bottom .playlist .new-playlist h4{
+    color: white;
+    margin-bottom: 10px;
+}
+aside .nav-bottom .playlist .new-playlist .add-new .add-icon{
+    display: flex;
+    align-items: center;
+}
+aside .nav-bottom .playlist .new-playlist .add-new a{
+    color: grey;
+    text-decoration: none;
+}
+aside .nav-bottom .playlist .new-playlist .add-new .add-icon > span{
+    margin-left: 10px;
+}
+
+/* PLAYLIST LIST */
+
+aside .nav-bottom .playlist .play-list{
+    overflow: visible;
+}
+aside .nav-bottom .playlist .play-list > ul li{
+    font-size: 0.9em;
+    list-style: none;
+    padding-top: 15px;
+}
+aside .nav-bottom .playlist .play-list > ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* LEFT-FOOTER */
+
+.left-footer{
+    width: 100%;
+    height: 75px;
+}
+.left-footer .left-footer-container{
+    width: 100%;
+    padding: 10px 20px;
+    /* border: 1px solid red */
+}
+.left-footer .left-footer-container .download {
+    width: 100%;
+    display: flex;
+}
+
+.left-footer .left-footer-container .download a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+.left-footer .left-footer-container .download .download-icon {
+    width: 15px;
+}
+.left-footer .left-footer-container .download .download-icon img{
+    width: 100%;
+}
+.left-footer .left-footer-container hr{
+    color: grey;
+    margin-top: 5px;
+}
+.left-footer .left-footer-container .account{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.left-footer .left-footer-container .account a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+.left-footer .left-footer-container .account .profile{
+    width: 10%;
+}
+.left-footer .left-footer-container .account .profile img{
+    width: 100%;
+}
 
 /* MAIN */
 main{
@@ -18,7 +147,6 @@ main .big-container{
     width: 100%;
     height: calc(100vh - 90px);
     display: flex;
-    /* background-color: red; */
 }
 
 main .big-container > *{
@@ -38,7 +166,6 @@ main .big-container .content{
 }
 
 main .big-container .cta{
-    /* height: 70px; */
     position: sticky;
     top: 0;
     z-index: 30;
@@ -59,7 +186,6 @@ main .big-container .content .content-nav{
     min-height: 40px;
     margin: 0 auto;
     line-height: 40px;
-    /* background-color: yellow; */
 }
 main .big-container .content .content-nav ul li{
     list-style: none;
@@ -75,7 +201,6 @@ section:not(.content){
 section .row{
     width: 100%;
     margin-top: 30px;
-    /* background-color: gold; */
 }
 section h2{
     font-size: 1.9em;
@@ -87,12 +212,7 @@ section p{
 }
 section .row .col{
     width: calc((100% / 6) - 15px);
-    /* height: 250px; */
-    /* height: calc(100vw / 6); */
-    /* background-color: skyblue;
-    border: 1px solid black; */
     margin-right: 15px;
-    /* margin-bottom: 20px; */
     position: relative;
 }
 /* section .row .col > .overlay{
@@ -119,17 +239,13 @@ section .row .col > .artist > div{
     padding-bottom: 30px;
 }
 
-/* main .big-container .content {
-    width: calc(100% / 6);
-} */
-
 
 
 /* FOOTER */
-footer{
+.main-footer{
 
 }
-footer .player{
+.main-footer .player{
     height: 90px;
     background-color: #282828;
     display: flex;
@@ -137,7 +253,7 @@ footer .player{
     color: white;
 }
 
-footer .player > *{
+.main-footer .player > *{
     background-color: plum;
     padding: 30px;
 }
@@ -178,66 +294,3 @@ footer .player > *{
 }
 
 
-
-
-
-
-
-
-/* RESET */
-
-/******************** ASIDE ********************/
-
-
-/***** HEADER LATERALE *****/
-
-
-/***** CONTENUTO PRINCIPALE ASIDE *****/
-
-/***** FOOTER LATERALE *****/
-
-
-/******************** FINE ASIDE ********************/
-
-
-/******************** MAIN ********************/
-
-/********** HEADER **********/
-
-
-/********** NAV **********/
-
-
-/***** CONTENUTO PRINCIPALE MAIN *****/
-
-
-/******************** FINE MAIN ********************/
-
-
-/******************** FOOTER ********************/
-
-/* MEDIA QUERY */
-/* @media screen and (max-width: 1100px){
-    .row .col{
-        width: calc((100% / 4) - 10px);
-    }
-    
-}
-@media screen and (max-width: 700px){
-    .row .col{
-        width: calc((100% / 2) - 10px);
-    }
-    
-}
-@media screen and (max-width: 600px){
-    .row .col{
-        width: calc((100% / 4) - 10px);
-    }
-    main .big-container .navigation{
-        width: 50px;
-    }
-    main .big-container .content{
-        width: calc(100% - 50px);
-    }
-    
-} */
