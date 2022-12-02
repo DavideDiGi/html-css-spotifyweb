@@ -15,22 +15,32 @@ aside header img{
 aside .left-nav{
     width: 100%;
     height: calc(100% - 145px);
+    min-height: 280px;
+    overflow: hidden;
 }
 
 /* ASIDE NAV-TOP */
+
 aside .nav-top{
     width: 100%;
+    /* height: 22%; */
 }
-aside .nav-top > *{
+aside .nav-top > * a{
    display: flex;
    align-items: center;
-}
-aside .nav-top >:first-child{
-   border-left: 3px solid greenyellow;
-}
-aside .nav-top > div > *{
    margin-top: 10px;
 }
+aside .nav-top > * a span{
+   margin-left: 10px;
+}
+aside .left-nav .borded, .left-footer{
+   border-left: 3px solid transparent;
+}
+
+aside .left-nav .nav-top .borded:first-of-type{
+    border-left-color: greenyellow ;
+}
+
 aside .nav-top > * >:first-child{
    padding-left: 20px;
    margin-right: 5px;
@@ -40,21 +50,33 @@ aside .nav-top > * a{
    text-decoration: none;
    color: gray;
 }
+aside .nav-top > * a.library-icon span{
+   min-width: 100px;
+}
 aside .nav-top > .home a{
    color: white;
 }
-aside .nav-top > * > div img:not(.home img){
+aside .nav-top > * > a img:not(.home img){
     filter: brightness(0.6);
 }
 
 /* ASIDE NAV-BOTTOM */
 
-aside .nav-bottom .playlist{
-    width: 100%;
-    padding: 20px 20px;
+aside .nav-bottom{
+    height: 100%;
 }
 
 /* NEW PLAYLIST */
+
+aside .nav-bottom .playlist{
+    width: 100%;
+    padding: 20px 20px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* overflow: auto; */
+}
 aside .nav-bottom .playlist .new-playlist h4{
     color: white;
     margin-bottom: 10px;
@@ -73,8 +95,17 @@ aside .nav-bottom .playlist .new-playlist .add-new .add-icon > span{
 
 /* PLAYLIST LIST */
 
-aside .nav-bottom .playlist .play-list{
-    overflow: visible;
+aside .nav-bottom .play-list{
+    height: 100%;
+    /* overflow: hidden;
+    display: flex;
+    flex-direction: column; */
+}
+
+aside .nav-bottom .playlist .play-list > ul {   overflow: auto;
+    height: 60%;
+    /* display: flex;
+    flex-direction: column; */
 }
 aside .nav-bottom .playlist .play-list > ul li{
     font-size: 0.9em;
@@ -91,10 +122,14 @@ aside .nav-bottom .playlist .play-list > ul li a{
 .left-footer{
     width: 100%;
     height: 75px;
+    
+
 }
 .left-footer .left-footer-container{
     width: 100%;
     padding: 10px 20px;
+    /* z-index: 20;
+    position: relative; */
     /* border: 1px solid red */
 }
 .left-footer .left-footer-container .download {
@@ -147,6 +182,7 @@ main .big-container{
     width: 100%;
     height: calc(100vh - 90px);
     display: flex;
+    overflow: hidden;
 }
 
 main .big-container > *{
