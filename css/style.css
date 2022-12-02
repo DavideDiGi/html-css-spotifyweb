@@ -1,3 +1,490 @@
+/* ASIDE */
 
+/* ASIDE HEADER */
+aside header{
+    width: 100%;
+    height: 70px;
+}
+aside header img{
+    width: 70%;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+/* ASIDE LEFT-NAV */
+aside .left-nav{
+    width: 100%;
+    height: calc(100% - 145px);
+    min-height: 280px;
+    overflow: hidden;
+}
+
+/* ASIDE NAV-TOP */
+
+aside .nav-top{
+    width: 100%;
+}
+aside .nav-top > * a{
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+}
+aside .nav-top > * a span{
+   margin-left: 10px;
+}
+aside .left-nav .borded, .left-footer{
+   border-left: 3px solid transparent;
+}
+
+aside .left-nav .nav-top .borded:first-of-type{
+    border-left-color: greenyellow ;
+}
+
+aside .nav-top > * >:first-child{
+   padding-left: 20px;
+   margin-right: 5px;
+   width: 20%;
+}
+aside .nav-top > * a{
+   text-decoration: none;
+   color: gray;
+}
+aside .nav-top > * a.library-icon span{
+   min-width: 100px;
+}
+aside .nav-top > .home a{
+   color: white;
+}
+aside .nav-top > * > a img:not(.home img){
+    filter: brightness(0.6);
+}
+
+/* ASIDE NAV-BOTTOM */
+
+aside .nav-bottom{
+    height: 100%;
+}
+
+/* NEW PLAYLIST */
+
+aside .nav-bottom .playlist{
+    width: 100%;
+    padding: 20px 20px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+aside .nav-bottom .playlist .new-playlist h4{
+    color: white;
+    margin-bottom: 10px;
+}
+aside .nav-bottom .playlist .new-playlist .add-new .add-icon{
+    display: flex;
+    align-items: center;
+}
+aside .nav-bottom .playlist .new-playlist .add-new a{
+    color: grey;
+    text-decoration: none;
+}
+aside .nav-bottom .playlist .new-playlist .add-new .add-icon > span{
+    margin-left: 10px;
+}
+
+/* PLAYLIST LIST */
+
+aside .nav-bottom .play-list{
+    height: 100%;
+}
+
+aside .nav-bottom .playlist .play-list > ul {
+    overflow: auto;
+    height: 60%;
+}
+aside .nav-bottom .playlist .play-list > ul li{
+    font-size: 0.9em;
+    list-style: none;
+    padding-top: 15px;
+}
+aside .nav-bottom .playlist .play-list > ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* LEFT-FOOTER */
+
+.left-footer{
+    width: 100%;
+    height: 75px;
+}
+.left-footer .left-footer-container{
+    width: 100%;
+    padding: 10px 20px;
+}
+.left-footer .left-footer-container .download {
+    width: 100%;
+    display: flex;
+}
+
+.left-footer .left-footer-container .download a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+.left-footer .left-footer-container .download .download-icon {
+    width: 15px;
+    filter: brightness(0.6);
+    padding-bottom: 5px;
+}
+.left-footer .left-footer-container .download .download-icon img{
+    width: 100%;
+}
+.left-footer .left-footer-container hr{
+    filter: brightness(0.6);
+}
+.left-footer .left-footer-container .account{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.left-footer .left-footer-container .account a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+.left-footer .left-footer-container .account .profile img{
+    width: 100%;
+    background-color: gray;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+}
+
+main .big-container{
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    overflow: hidden;
+}
+
+main .big-container > *{
+    height: 100%
+}
+
+main .big-container .navigation{
+    width: 230px;
+    background-color: black;
+}
+
+main .big-container .content{
+    width: calc(100% - 230px);
+    overflow: auto;
+    background-color: rgb(25, 29, 37);
+    color: white;
+}
+
+main .big-container .cta{
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    text-align: right;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+main .big-container .cta > a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+main .big-container .content .content-nav{
+    width: 55%;
+    min-height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+main .big-container .content .content-nav ul li{
+    list-style: none;
+}
+main .big-container .content .content-nav ul li > a{
+    text-decoration: none;
+    color: gray;
+}
+section:not(.content){
+    width: 100%;
+    padding: 15px;
+}
+section .row{
+    width: 100%;
+    margin-top: 30px;
+}
+section h2{
+    font-size: 1.9em;
+}
+section p{
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 10px;
+}
+section .row .col{
+    width: calc((100% / 6) - 15px);
+    margin-right: 15px;
+    position: relative;
+}
+section .row .col > .artist{
+    text-align: center;
+    padding-top: 10px;
+}
+section .row .col > .artist > div{
+    padding-top: 7px;
+    font-size: 0.9em;
+    color: gray;
+}
+#popular-artists .row .col img{
+    border-radius: 50%;
+}
+#popular-artists .row .col{
+    padding-bottom: 30px;
+}
+
+/* FOOTER */
+.main-footer .player{
+    height: 90px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.main-footer .player > *{
+    display: flex;
+    width: calc(50% / 3 );
+}
+
+/* PLAYING */
+.main-footer .player > .playing{
+    justify-content: space-around;
+    align-items: center;
+}
+.main-footer .player > .playing .song{
+    display: flex;
+    width: 50%;
+    text-decoration: none;
+}
+.main-footer .player > .playing .song-img{
+    width: 40px;
+}
+.main-footer .player > .playing .song-title{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    color: white;
+    margin-left: 3px;
+}
+.main-footer .player > .playing .song-title > h5{
+    font-size: 0.9em;
+}
+.main-footer .player > .playing .song-title > span{
+    font-size: 0.8em;
+    color: gray;
+}
+.main-footer .player > .playing .song-buttons{
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-footer .player > .playing .song-buttons >*{
+    all: unset;
+    color: grey;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.main-footer .player > .playing .song-buttons >:first-child{
+    margin-left: 10px;
+}
+
+
+
+/* CONTROLS */
+.main-footer .player >.controls{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;    
+}
+.main-footer .player >.controls .buttons{
+   width: 25%;
+   height: 50%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
+   padding-top: 20px;
+}
+.main-footer .player >.controls .buttons > *{
+   width: 70px;
+   height: 25px;
+   font-size: 1.5em;
+}
+.main-footer .player >.controls .buttons button{
+    all: unset;
+    cursor: pointer;
+}
+
+/* LEFT BUTTONS */
+.main-footer .player >.controls .buttons > .left-buttons{
+    display: flex;
+}
+.main-footer .player >.controls .buttons > .left-buttons >*{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RIGHT BUTTONS */
+.main-footer .player >.controls .buttons > .right-buttons{
+  display: flex;
+}
+.main-footer .player >.controls .buttons > .right-buttons >*{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CENTRAL BUTTON */
+.main-footer .player >.controls .buttons > .central-button{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.main-footer .player >.controls .buttons > .central-button .play{
+  font-size: 0.8em;
+}
+
+.main-footer .player >.controls .long.volume-bar{
+    width: 55%;
+    height: 50%;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-footer .player >.controls .long.volume-bar > .gray{
+    width: 80%;
+    height: 4px;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-footer .player >.controls .long.volume-bar > .gray > .lightgray{
+    width: 20%;
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.main-footer .player >.controls .long.volume-bar > .time{
+    width: 25px;
+    height: 20px;
+    font-size: 0.7em;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* AUDIO */
+.main-footer .player >.audio .tools{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.main-footer .player >.audio .tools > button{
+    all: unset;
+    cursor: pointer;
+}
+.main-footer .player >.audio .tools .volume-bar > .gray{
+    background-color: #565656;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main-footer .player >.audio .tools .short > .gray{
+    width: 120px;
+    height: 4px;
+}
+.main-footer .player >.audio .tools .volume-bar > .gray > .lightgray{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.main-footer .player >.audio .tools .short > .gray > .lightgray{
+    width: 25px;
+    height: 4px;
+}
+
+
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1100px){
+  
+    #recently .row .col{
+        width: calc((100% / 4) - 15px);
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 700px){
+   
+    #recently .row .col{
+        width: calc((100% / 2) - 15px);
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    
+    #recently .row .col{
+        width: calc((100% / 4) - 15px);
+        margin-bottom: 50px;
+    }
+    main .big-container .navigation{
+        width: 50px;
+    }
+    main .big-container .content{
+        width: calc(100% - 50px);
+    }
+    
+}
 
 

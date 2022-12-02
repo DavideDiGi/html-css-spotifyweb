@@ -294,8 +294,8 @@ section .row .col > .artist > div{
 }
 
 .main-footer .player > *{
-    background-color: plum;
-    border: 1px solid black;
+
+    /* border: 1px solid black; */
     /* padding: 30px; */
     display: flex;
 
@@ -306,7 +306,7 @@ section .row .col > .artist > div{
 .main-footer .player > .playing{
     justify-content: space-around;
     align-items: center;
-    background-color: #282828;
+    /* background-color: #282828; */
 }
 .main-footer .player > .playing .song{
     display: flex;
@@ -368,12 +368,115 @@ section .row .col > .artist > div{
 /* CONTROLS */
 .main-footer .player >.controls{
     flex-grow: 1;
-    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightcoral; */
+    
+}
+.main-footer .player >.controls .buttons{
+   width: 25%;
+   height: 50%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
+   padding-top: 20px;
+   /* background-color: aquamarine; */
+}
+.main-footer .player >.controls .buttons > *{
+   width: 70px;
+   height: 25px;
+   font-size: 1.5em;
+   /* background-color: greenyellow;
+   border: 1px solid black; */
+}
+.main-footer .player >.controls .buttons button{
+    all: unset;
+    cursor: pointer;
+}
+
+/* LEFT BUTTONS */
+.main-footer .player >.controls .buttons > .left-buttons{
+    display: flex;
+}
+.main-footer .player >.controls .buttons > .left-buttons >*{
+    width: 50%;
+    height: 100%;
+    /* background-color: red;
+    border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RIGHT BUTTONS */
+.main-footer .player >.controls .buttons > .right-buttons{
+  display: flex;
+}
+.main-footer .player >.controls .buttons > .right-buttons >*{
+    width: 50%;
+    height: 100%;
+    /* background-color: red;
+    border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CENTRAL BUTTON */
+.main-footer .player >.controls .buttons > .central-button{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.main-footer .player >.controls .buttons > .central-button .play{
+  font-size: 0.8em;
+}
+
+
+.main-footer .player >.controls .long.volume-bar{
+    width: 55%;
+    height: 50%;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: goldenrod; */
+}
+.main-footer .player >.controls .long.volume-bar > .gray{
+    width: 80%;
+    height: 4px;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-footer .player >.controls .long.volume-bar > .gray > .lightgray{
+    width: 20%;
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.main-footer .player >.controls .long.volume-bar > .time{
+    width: 25px;
+    height: 20px;
+    font-size: 0.7em;
+    line-height: 20px;
+    text-align: center;
+    /* background-color: red; */
 }
 
 /* AUDIO */
 .main-footer .player >.audio{
-    background-color: #282828;
+    /* background-color: #282828; */
 }
 .main-footer .player >.audio .tools{
     width: 100%;
@@ -388,20 +491,42 @@ section .row .col > .artist > div{
     all: unset;
     cursor: pointer;
 }
-.main-footer .player >.audio .tools .bar > .gray{
-    width: 120px;
-    height: 4px;
-    background-color: grey;
+.main-footer .player >.audio .tools .volume-bar > .gray{
+    background-color: #565656;
     cursor: pointer;
     border-radius: 5px;
-
 }
-.main-footer .player >.audio .tools .bar > .gray > .lightgray{
-    width: 25px;
+.main-footer .player >.audio .tools .short > .gray{
+    width: 120px;
     height: 4px;
+}
+.main-footer .player >.audio .tools .volume-bar > .gray > .lightgray{
     background-color: lightgray;
     border-radius: 5px;
 }
+.main-footer .player >.audio .tools .short > .gray > .lightgray{
+    width: 25px;
+    height: 4px;
+}
+/* 
+.main-footer .player .volume-bar > .gray{
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main-footer .player .short > .gray{
+    width: 120px;
+    height: 4px;
+}
+.main-footer .player .volume-bar > .gray > .lightgray{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.main-footer .player .short > .gray > .lightgray{
+    width: 25px;
+    height: 4px;
+}
+ */
 
 
 
