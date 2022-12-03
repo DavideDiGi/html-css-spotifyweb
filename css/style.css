@@ -208,8 +208,8 @@ main .big-container .cta > a{
     padding: 10px 30px;
 }
 
-main .big-container .content .content-nav{
-    width: 55%;
+main .content-nav{
+    width: 650px;
     min-height: 40px;
     margin: 0 auto;
     line-height: 40px;
@@ -269,17 +269,18 @@ section .row .col > .artist > div{
 
 .main-footer .player > *{
     display: flex;
-    width: calc(50% / 3 );
+    /* width: calc(50% / 3 ); */
 }
 
 /* PLAYING */
 .main-footer .player > .playing{
     justify-content: space-around;
     align-items: center;
+    min-width: 230px;
 }
 .main-footer .player > .playing .song{
     display: flex;
-    width: 50%;
+    /* width: 50%; */
     text-decoration: none;
 }
 .main-footer .player > .playing .song-img{
@@ -328,7 +329,7 @@ section .row .col > .artist > div{
     flex-direction: column;    
 }
 .main-footer .player >.controls .buttons{
-   width: 25%;
+   width: 240px;
    height: 50%;
    margin: 0 auto;
    display: flex;
@@ -420,7 +421,7 @@ section .row .col > .artist > div{
 
 /* AUDIO */
 .main-footer .player >.audio .tools{
-    width: 100%;
+    width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,23 +459,28 @@ section .row .col > .artist > div{
 /* MEDIA QUERY */
 @media screen and (max-width: 1100px){
   
-    #recently .row .col{
+    #recently .row .col, #for-you .row .col, #popular-artists .row .col{
         width: calc((100% / 4) - 15px);
         margin-bottom: 50px;
     }
-    
 }
 @media screen and (max-width: 700px){
    
-    #recently .row .col{
+    #recently .row .col, #for-you .row .col, #popular-artists .row .col{
         width: calc((100% / 2) - 15px);
         margin-bottom: 50px;
     }
+
+    main .big-container .content nav.content-nav{
+        background-color: yellow;
+        width: 100%;
+    }
+    
     
 }
 @media screen and (max-width: 600px){
     
-    #recently .row .col{
+    #recently .row .col, #for-you .row .col, #popular-artists .row .col{
         width: calc((100% / 4) - 15px);
         margin-bottom: 50px;
     }
@@ -484,6 +490,11 @@ section .row .col > .artist > div{
     main .big-container .content{
         width: calc(100% - 50px);
     }
+    main .big-container .content nav.content-nav{
+        background-color: red;
+        width: 90%;
+    }
+    
     
 }
 
