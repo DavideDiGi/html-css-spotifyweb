@@ -562,10 +562,7 @@ section .row .col > .artist > div{
         display:block;
         width: 90%;
     }
-    aside header{
-       
-    }
-    
+   
     #recently .row .col, #for-you .row .col, #popular-artists .row .col{
         width: calc((100% / 2) - 15px);
         margin-bottom: 50px;
