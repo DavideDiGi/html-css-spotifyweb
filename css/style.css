@@ -591,9 +591,9 @@ section .row .col > .artist > div{
     aside header{
         height: 40px;
     }
-    /* .navigation header img:last-child {
-        margin-right: 5px;
-    } */
+    .navigation header img:last-child {
+        margin-left: 3px;
+    }
 
     .left-footer .left-footer-container {
         padding: 10px 12px;
