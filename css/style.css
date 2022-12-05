@@ -25,6 +25,14 @@ aside .left-nav{
 
 /* ASIDE NAV-TOP */
 
+aside .nav-top *:hover,
+aside .nav-bottom *:hover, 
+aside .nav-bottom .playlist .play-list *:hover, 
+.left-footer *:hover{
+    color: white;
+    filter: none;
+}
+
 aside .nav-top{
     width: 100%;
 }
@@ -59,7 +67,7 @@ aside .nav-top > * a.library-icon span{
 aside .nav-top > .home a{
    color: white;
 }
-aside .nav-top > * > a img:not(.home img){
+aside .nav-top > * > a img{
     filter: brightness(0.6);
 }
 
@@ -219,14 +227,12 @@ main .big-container .cta > a{
     border-radius: 20px;
     padding: 10px 30px;
 }
+main .big-container .cta a:hover{
+    font-size: 1.1em;
+}
 
-main .content-nav{
-    /* width: 650px;
-    min-height: 40px;
-    margin: 0 auto;
-    line-height: 40px;
-    */
-
+main .big-container .content nav.content-nav ul li > *:hover{
+    color: white;
 }
 main .big-container .content nav.content-nav ul{
     max-width: 100%;
@@ -346,7 +352,13 @@ section .row .col > .artist > div{
 .main-footer .player > .playing .song-buttons >:first-child{
     margin-left: 10px;
 }
-
+.main-footer .player .playing .song-title span:hover{
+    text-decoration: underline;
+    color: white;
+}
+.main-footer .player .playing .song-buttons button i:hover{
+    color: white;
+}
 
 
 /* CONTROLS */
