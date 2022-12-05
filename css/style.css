@@ -595,8 +595,11 @@ section .row .col > .artist > div{
         margin-right: 5px;
     } */
 
-    .left-footer .left-footer-container .account .profile{
-        padding-right: - 20px;
+    .left-footer .left-footer-container {
+        padding: 10px 12px;
+    }
+    .left-footer .left-footer-container .download-icon {
+        margin-left: 4px;
     }
 
     .main-footer .player >.audio .tools {
